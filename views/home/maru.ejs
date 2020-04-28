@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> maru </title>
+  <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
+  <img id="canvasInput" alt="No Image" width="400dp" height="360dp" />
+  <p id="status">OpenCV.js is loading...</p>
+  <button id='t'>"z"</button>
+  <br>
+
+</head>
+
+<body>
+  <div class="container mb-3">
+    <table>
+      <% imagelist.forEach(function (element, count = 0) { %>
+      <tr>
+        <td>
+          <img src="./res/marujpg/<%=element%>" id="<%= count %>" class="input" />
+        </td>
+        <!-- 'tophat_temp', 'tophat_most', -->
+      </tr>
+      <% count++;})%>
+    </table>
+
+
+  </div>
+
+
+  <!-- <script src='./js/opcv_js/convert.js' type="text/javascript"> </script> -->
+  <!-- <script async src="./js/opencv.js" onload="onOpenCvReady();" type="text/javascript"> -->
+  </script>
+
+</body>
+
+
+</html>
